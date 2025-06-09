@@ -1,9 +1,5 @@
 
-
 # 🧩 My First GitHub Project
-
-hello world 
-goodbye
 
 This is a test project to play around with GitHub, learn version control, and practice pushing code, editing files, and writing READMEs.
 
