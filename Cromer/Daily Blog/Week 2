@@ -5,3 +5,19 @@
 - 'created the folder with 5 initial files' 
 -  'started working on starter code for the scheduler file and task'
 
+## Wed June 11, 2025
+
+- 'Attended AI + Edge Computing Lecture'  
+- '* Prepared notes for Thursday’s meeting:'
+   - ' Initial prototype with `scheduler.py`, `task.py`, `main.py`, and added `node.py` '
+   - '  Planning logging visibility (similar to `kube-scheduler-simulator`) '
+   - 'Modular scheduler design with plugin-like architecture: filter, score, reserve, bind '
+   Researched to implementand improve:
+   - 'Kubernetes plugin scheduler framework'
+   - 'YAML-based input simulations (pods/nodes)'
+   - 'Event logging best practices'
+
+- 'Practiced Python scheduling logic'  
+-  Explored GitHub repo: [kube-scheduler-simulator](https://github.com/kubernetes-sigs/kube-scheduler-simulator)
+
+- 'Start problem statement,motivation , and hypothesis for presentation' 
