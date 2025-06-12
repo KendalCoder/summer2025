@@ -23,3 +23,34 @@
 - 'Start problem statement,motivation , and hypothesis for presentation' 
 
 ## Thursday June 12, 2025
+
+- '**Tasks Completed:'
+
+- 'Met with the writing coach to discuss how to present and explain technical progress more clearly.'
+- 'Continued reviewing how to improve the project code based on my research into scheduling simulations and Kubernetes schedulers.'
+- 'Met with the team at 3 PM for regular project sync.'
+- 'Met with Yongho after the team meeting to review the code I’ve written so far and discuss the next steps.'
+
+- 'Code Progress:'
+
+- 'Began implementing a new Node class (node.py) to simulate compute nodes (rpi, jetson, blade) for more realistic task execution modeling.'
+- 'Planning to use this class to:'
+  - 'Simulate real node states'
+- 'Monitor resource usage'
+- 'Implement distributed task execution logic'
+- 'Reset system state for multiple test runs'
+- 'Inject simulated workloads'
+- '*Adjusting the scheduler.py file so that it delegates execution to nodes, not the scheduler directly.'
+
+
+
+## Friday June 13, 2025 
+ - 'In Progress:' 
+   - 'Continuing to explore modular scheduling based on plugin-style patterns inspired byKu bernetes (Filter, Score, Bind phases).'
+ - 'Preparing to integrate logging and metrics tracking for node performance and task flow.'
+- 'Added functionality to:'
+- 'Print how many times each task was executed'
+- 'Track how many tasks each node handled'
+- 'Log which node executed which task'
+
+
