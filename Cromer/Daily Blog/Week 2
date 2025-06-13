@@ -42,15 +42,34 @@ Thursday June 12, 2025
 - Inject simulated workloads
 - *Adjusting the scheduler.py file so that it delegates execution to nodes, not the scheduler directly.
 
-
-
-## Friday June 13, 2025 
- - In Progress:
+ Friday June 13, 2025 
+ - In Progress: from the day before
   - Continuing to explore modular scheduling based on plugin-style patterns inspired byKu bernetes (Filter, Score, Bind phases).
 - Preparing to integrate logging and metrics tracking for node performance and task flow.
 - Added functionality to:
 - Print how many times each task was executed
 - Track how many tasks each node handled
 - Log which node executed which task
+
+ Meeting
+- Met with Yongho for progress check-in.
+
+Code Improvements
+- ✅ Fixed initial import/module errors in scheduler setup.
+- ✅ Enhanced scheduler system to:
+  1. Track how many times each task was executed.
+  2. Introduce a `Node` class to simulate compute nodes: `rpi`, `jetson`, and `blade`.
+  3. Assign tasks to nodes dynamically — nodes now execute the tasks, not the scheduler.
+  4. Log which node executes which task.
+  5. Add execution summaries grouped by both task and node.
+
+ Study / Research
+- Read GitHub repositories related to **edge resource analysis** to explore real-world scheduler designs.
+- Watched tutorials/videos to better understand edge computing task allocation patterns.
+
+Next Steps
+- Expand node simulation to include resource capacity and load balancing.
+- Look into logging task failures or retries.
+- Possibly add threading to simulate parallel execution across nodes.
 
 
