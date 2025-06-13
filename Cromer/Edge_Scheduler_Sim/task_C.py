@@ -1,4 +1,4 @@
-#task_C.py
+#task_c.py
 
 import time
 
