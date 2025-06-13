@@ -2,7 +2,6 @@
 # scheduler.py
 
 import random
-from node import ComputeNode
 
 class Scheduler:
     def __init__(self, nodes):
@@ -24,4 +23,4 @@ class Scheduler:
 
         print("\nExecution Summary:")
         for task, count in self.task_counter.items():
-            print("{task}: executed {count} time(s)")
+            print(f"{task}: executed {count} time(s)")

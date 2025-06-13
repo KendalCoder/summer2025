@@ -3,16 +3,16 @@
 # Edge_Scheduler_Sim/main.py
 # main.py
 
-from Scheduler import Scheduler
+from scheduler import Scheduler
 from task_a import run_task_a
 from task_b import run_task_b
 from task_c import run_task_c
-from node import Node
+from node import ComputeNode
 
 # Create nodes
-rpi = Node("rpi")
-jetson = Node("jetson")
-blade = Node("blade")
+rpi = ComputeNode("rpi")
+jetson = ComputeNode("jetson")
+blade = ComputeNode("blade")
 
 nodes = [rpi, jetson, blade]
 
