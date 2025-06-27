@@ -40,15 +40,12 @@ Tuesday
 Focused on:
 
 • Fixing Fairshare bug:
-
+error line 10 
 
 # Old (error)
-
 cpu_usage = [node.metrics["cpu"] for node in nodes]
 
-
 # Fixed:
-
 cpu_usage = [node.metrics.get("cpu", float(”inf”)) for node in nodes]
 
 
