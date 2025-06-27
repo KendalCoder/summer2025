@@ -1,0 +1,120 @@
+
+Weekly Log: Scheduler Integration and Optimization (Week of June 24)
+
+
+Weekly deliverables
+
+Task 1:
+Run and test simulation using Quick Start instructions
+
+Task 2-1:
+ Uncomment scheduler in mywaggle.yaml
+
+Task 2-2:
+ Fix bug in FairshareScheduler and demonstrate it running in simulation
+
+Task 3:
+ Integrate Henry’s dual descent scheduler from Colab link into the scheduler/ directory and run it with simulation
+
+
+
+Monday
+
+• Met with Yongho → Received this week’s deliverables
+
+• Completed:
+• Passport Safety Training
+• Section 101 Security Training
+• Additional safety module
+• Started:
+
+• Task 1: README.md Quick Start
+• Ran, tested, and debugged simulation code
+• Investigated bug in FairshareScheduler
+
+
+
+Tuesday
+
+• Worked on research journal: methodology & design notes
+Focused on:
+
+• Fixing Fairshare bug:
+
+
+# Old (error)
+
+cpu_usage = [node.metrics["cpu"] for node in nodes]
+
+
+# Fixed:
+
+cpu_usage = [node.metrics.get("cpu", float(”inf”)) for node in nodes]
+
+
+Had to fix errors to make code run :
+• Installed missing packages (tensorboard)
+eea971c8f87b5cf2e53c94398ccd6f773a16adfe
+0080f1099258f363167f8bdc8ded18c1defcdcaf
+
+• Used --config flag to avoid manually selecting the YAML file every run:
+
+--config /home/kendal/edge_resource_analysis/simulation/kubernetes/mywaggle.yaml
+
+
+Completed Task 2-2 → Working demonstration of FairshareScheduler with debugged logic
+
+
+
+
+Wednesday
+
+• Moved Henry’s dual descent code into the scheduler/ directory (dual_node.py)
+
+• Installed cvxpy:
+
+Bash: pip install cvxpy
+
+• Fixed henry code for the dualnode.py :
+ 46b2a7c7a65af8114c42dca50a599d0c06d85433
+
+• Learned:
+
+• cvxpy enables mathematical optimization in Python using variables, objectives, constraints
+
+• Attended a seminar (HPC focus)
+
+• Wrote prep notes for Thursday code explanation for the meeting
+
+
+
+Thursday
+
+• Morning: Met with mentor to review simulation logic and scheduler goals
+
+• Afternoon: Met with team
+
+• Reached out to Work with Henry to:
+
+• Clarify lambda format
+
+• Continue testing dual descent scheduler
+
+• Make centralized_solver.py runnable with simulation
+
+• Understand and get clarification on the output of the code match his that he ran and mine
+
+
+
+
+Friday
+
+• Completed Task 3: Integrated and ran Henry’s scheduler in the simulation
+
+• Verified: It integrates with run.py
+• CVXPY logic solves the problem and dual update works
+• Reviewed SAGE documentation for formatting results:
+https://www.anl.gov/mcs/Sage-MSRI-1
+
+• Started working on next steps for my journal
+
