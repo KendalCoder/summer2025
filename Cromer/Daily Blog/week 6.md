@@ -102,14 +102,12 @@ Fix csvexport.py
 Finalize writing results ( what I’ve learned) for my journal 
 
 
-
-
-
 Friday:
+Fix tensorboarrd.py
+7694c6a6ee21b4350a216cf899257cded380f27c
 
 
-
-
+Final goal to show for presentation: 
 Visual Results (WIP)
 
 Generated CSV:
